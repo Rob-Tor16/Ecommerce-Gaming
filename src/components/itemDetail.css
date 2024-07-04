@@ -1,0 +1,36 @@
+.lista{
+    list-style-type: none;
+    padding: 18px;
+}
+
+.item{
+    display: flex;
+    gap: 10px;
+}
+
+.bi-shield-check{
+    font-size: 28px;
+}
+
+.bi-truck{
+    font-size: 28px;
+}
+
+.bi-shop{
+    font-size: 28px;
+}
+
+.bi-check-circle-fill{
+    font-size: 28px;
+}
+
+.bi-truck{
+    font-size: 28px;
+}
+
+ @media (max-width:500px) {
+    .row{
+        width: auto;
+        max-width: 460px;
+    }
+}

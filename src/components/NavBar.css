@@ -1,0 +1,49 @@
+.contenedor-nav{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: sticky;
+  }
+
+  .img-logo{
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    max-height: 90px;
+  }
+
+  @media screen and (max-width:500px) {
+    
+    .navbar{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .barra{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width:410px) {
+    
+    .navbar{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .barra{
+      width: 100%;
+    }
+
+    .img-logo{
+      width: auto;
+      max-width: 90px;
+      height: auto;
+      max-height: 90px;
+    }
+  }
+
+ 
+
+ 
+
