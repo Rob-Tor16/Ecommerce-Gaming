@@ -12,13 +12,13 @@ const Home = () => {
               </div>
               <div className="carousel-inner">
                   <div className="carousel-item active">
-                  <img src="https://front.dev.malditohard.com.ar/img/prod/abd871d8-2ee2-43e0-aa3a-9fd8c3910250a-ver.webp" className="d-block w-100 " height="600" alt="..."/>
+                  <img src="https://amdparatodos.com/wp-content/uploads/2022/12/AMD_Banner_Radeon_RX7000_Desktop.jpg" className="d-block w-100 " height="600" alt="..."/>
                   </div>
                   <div className="carousel-item">
-                  <img src="https://front.dev.malditohard.com.ar/img/prod/44927281-9501-492f-905f-42a2a5c3e943amd-1.webp" className="d-block w-100 " height="600" alt="..."/>
+                  <img src="https://i.dell.com/sites/csimages/Banner_Imagery/all/intel-11th-gen-page-main-banner-v2.jpg" className="d-block w-100 " height="600" alt="..."/>
                   </div>
                   <div className="carousel-item">
-                  <img src="https://front.dev.malditohard.com.ar/img/prod/7948c940-23a9-41a1-b278-ce53a1a0243f2-razer.webp" className="d-block w-100 " height="600"alt="..."/>
+                  <img src="https://cdn.grupoelcorteingles.es/statics/manager/contents/images/uploads/2021/05/H1xn-vMYu.jpeg" className="d-block w-100 " height="600"alt="..."/>
                   </div>
                   
               </div>

@@ -34,7 +34,6 @@ const NavBar = () => {
       
     </div>
     <form className="d-flex p-2 gap-2" role="search">
-        <Link className="button" to="/login"><i className="bi bi-person-fill"></i></Link>
         <CartWidget />
     </form>
     
