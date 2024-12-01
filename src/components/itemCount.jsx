@@ -21,7 +21,11 @@ const ItemCount = ({ cantidad, handleRestar, handleSumar, handleAgregar, mensaje
       <div className='container-boton'>
         <button className="button " onClick={handleAgregarAlCarrito}>Agregar al carrito</button>
         {agregadoAlCarrito && (
-          <Link to="/carrito" className="button-comprar d-flex justify-content-center" onClick={() => console.log("Terminar compra")}>Terminar compra</Link>
+          <div className='container-boton '>
+               <Link to="/carrito" className="button-comprar d-flex justify-content-center" onClick={() => console.log("Terminar compra")}>Terminar compra</Link>
+               <Link  to ="/productos" className="button-eliminar d-flex justify-content-center" ><i className="bi bi-arrow-return-left"></i>volver al catalogo</Link>
+          </div>
+         
         )}
       </div>
     </div>

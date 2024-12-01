@@ -1,49 +1,35 @@
-import React, {useState} from 'react'
-import './NavBar.css'
+import React from 'react';
+import './NavBar.css';
+import { useRef } from 'react';
+import {FaBars, FaTimes} from "react-icons/fa";
+import CartWidget from "./cartWidget.jsx";
 import { Link } from "react-router-dom";
-import CartWidget from './cartWidget';
 
 const NavBar = () => {
+  const navRef = useRef();
 
-
+  const showNavBar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  }
   return (
-
-<nav className="navbar navbar-expand-lg bg-white  ">
-  <div className="barra container-fluid d-flex justify-content-center ">
-  <Link className="navbar-brand" to="/"><img className="img-logo img-fluid"src="/img/logo-gaming.png" alt="Gaming Corpse" /></Link>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link text-dark" to="/productos">Productos</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link text-dark" to="/contacto">Contacto</Link>
-                            </li>
-                            <li>
-                                <Link className="nav-link text-dark" to="/ayuda">Ayuda</Link>
-                            </li>
-        
-      </ul> 
-      
-      
-    </div>
-    <form className="d-flex p-2 gap-2" role="search">
-        <CartWidget />
-    </form>
-    
-    
-    
-  </div>
-</nav>
-
-        
-
+        <header className="bg-navbar d-flex align-items-center justify-content-center p-0">
+          <div><img className="logo-img" src="/img/logo-gaming.png" /></div>
+            <nav ref={navRef}>
+            <Link className="a active" aria-current="page" to="/">Home</Link>
+            <Link className="a text-dark" to="/productos">Productos</Link>
+            <Link className="a text-dark" to="/contacto">Contacto</Link>
+            <Link className="a text-dark" to="/ayuda">Ayuda</Link>
+              <form className="d-flex p-2 gap-2" role="search">
+                <CartWidget />
+                </form>
+              <div className="btn  text-warning p-2 text-dark"onClick={showNavBar}>
+                  <FaTimes/>
+              </div>
+            </nav>
+          <button className="btn  text-dark"onClick={showNavBar}>
+            <FaBars/>
+          </button>
+        </header>
     
   )
 }
